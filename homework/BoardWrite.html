@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BoardList.html</title>
+        <title>BoardWrite.html</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
@@ -73,94 +73,39 @@
                 </div>
                 <div class="col-sm-9">
                     <p class="mt-1">
-                        <span style="font-size: 30px;">게시판 목록</span> - <span style="font-size: 24px;">자유 게시판</span>
+                        <span style="font-size: 30px;">게시판 작성</span> - <span style="font-size: 24px;">자유 게시판</span>
                     </p>
-                    <div class="d-flex justify-content-end">
-                        <select class="form-select" style="width: 120px;">
-                            <option>제목</option>
-                        </select>
-                        <form class="d-flex me-5">
-                            <input class="form-control ms-1" type="text" placeholder="검색" style="width: 350px;">
-                            <a href="#" class="list-group-item list-group-item-action" style="width: 50px;"><i class="bi bi-search"></i></a>
-                        </form>
-                    </div>
+                    
 
-                    <table class="table table-striped table-dark table-bordered">
-                        <thead>
-                            <tr class="text-center">
-                                <th>번호</th>
-                                <th style="width: 700px;">제목</th>
-                                <th>작성자</th>
-                                <th>작성일</th>
-                                <th>조회수</th>
-                                <th>첨부</th>
-                            </tr>
-                        </thead>
+                    <table class="table table-bordered">
                         <thead>
                         <tbody>
-                            <tr class="text-center">
-                                <td>10</td>
-                                <td><a href="./BoardView.html">제목</a></td>
-                                <td>길동이</td>
-                                <td>2021-11-23</td>
-                                <td>99</td>
-                                <td><i class="bi bi-briefcase-fill"></i></td>
+                            <tr>
+                                <td style="width: 150px; text-align: center; line-height: 33px;">작성자</td>
+                                <td><input type="text" class="form-control" style="width: 100px;"></td>
                             </tr>
-                            <tr class="text-center">
-                                <td>10</td>
-                                <td><a href="./BoardView.html">제목</a></td>
-                                <td>길동이</td>
-                                <td>2021-11-23</td>
-                                <td>99</td>
-                                <td><i class="bi bi-briefcase-fill"></i></td>
+                            <tr>
+                                <td style="width: 150px; text-align: center; line-height: 33px;">패스워드</td>
+                                <td><input type="text" class="form-control" style="width: 200px;"></td>
                             </tr>
-                            <tr class="text-center">
-                                <td>10</td>
-                                <td><a href="./BoardView.html">제목</a></td>
-                                <td>길동이</td>
-                                <td>2021-11-23</td>
-                                <td>99</td>
-                                <td><i class="bi bi-briefcase-fill"></i></td>
+                            <tr>
+                                <td style="width: 150px; text-align: center; line-height: 33px;">제목</td>
+                                <td><input type="text" class="form-control"></td>
                             </tr>
-                            <tr class="text-center">
-                                <td>10</td>
-                                <td><a href="./BoardView.html">제목</a></td>
-                                <td>길동이</td>
-                                <td>2021-11-23</td>
-                                <td>99</td>
-                                <td><i class="bi bi-briefcase-fill"></i></td>
+                            <tr>
+                                <td style="width: 150px; text-align: center; line-height: 125px;">내용</td>
+                                <td><textarea class="form-control" rows="5" id="comment" name="text"></textarea></td>
                             </tr>
-                            <tr class="text-center">
-                                <td>10</td>
-                                <td><a href="./BoardView.html">제목</a></td>
-                                <td>길동이</td>
-                                <td>2021-11-23</td>
-                                <td>99</td>
-                                <td><i class="bi bi-briefcase-fill"></i></td>
-                            </tr>
-                            <tr class="text-center">
-                                <td>10</td>
-                                <td><a href="./BoardView.html">제목</a></td>
-                                <td>길동이</td>
-                                <td>2021-11-23</td>
-                                <td>99</td>
-                                <td><i class="bi bi-briefcase-fill"></i></td>
-                            </tr>
-                            <tr class="text-center">
-                                <td>10</td>
-                                <td><a href="./BoardView.html">제목</a></td>
-                                <td>길동이</td>
-                                <td>2021-11-23</td>
-                                <td>99</td>
-                                <td><i class="bi bi-briefcase-fill"></i></td>
-                            </tr>
-                            <tr class="text-center">
-                                <td>10</td>
-                                <td><a href="./BoardView.html">제목</a></td>
-                                <td>길동이</td>
-                                <td>2021-11-23</td>
-                                <td>99</td>
-                                <td><i class="bi bi-briefcase-fill"></i></td>
+                            <tr>
+                                <td style="width: 150px; text-align: center; line-height: 33px;">첨부파일</td>
+                                <td>
+                                    <form>
+                                        <div class="input-group">
+                                            <span class="input-group-text">파일선택</span>
+                                            <input type="text" class="form-control" placeholder="선택된 파일 없음">
+                                        </div>
+                                    </form>
+                                </td>
                             </tr>
                         </tbody>
                         </thead>
@@ -168,9 +113,7 @@
 
                     <div class="d-flex justify-content-end pe-5" style="padding: 10px;">
                         <button type="button" class="btn btn-danger m-1">Reset</button>
-                        <button type="button" class="btn btn-dark m-1">
-                            <a href="./BoardWrite.html" style="text-decoration: none; color: white;">글쓰기</a>
-                        </button>
+                        <button type="button" class="btn btn-dark m-1">글쓰기</button>
                         <button type="button" class="btn btn-primary m-1">수정하기</button>
                         <button type="button" class="btn btn-secondary m-1">삭제하기</button>
                         <button type="button" class="btn btn-success m-1">답글쓰기</button>
